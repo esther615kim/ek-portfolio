@@ -2,18 +2,34 @@ import React, { useEffect, useRef } from 'react';
 import Arrow from './Arrow';
 import { StyledDiv } from '../styles/Intro.styled';
 import { Wrapper } from '../styles/Container.styled';
-import { Email, LinkedIn, GitHub, Code, ExpandMore } from '@mui/icons-material';
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Email, LinkedIn, GitHub, Code } from '@mui/icons-material';
 import { TextAnimation } from './TextAnimation';
 import { StyledImage } from '../styles/Element.styled';
-import { Grid, IconButton } from '@mui/material';
+import { Grid, IconButton, Collapse, styled } from '@mui/material';
 import { init } from 'ityped';
 import BgLine from './static/BgLine';
 import profile from '../static/image/profile.png';
-// import bgLine from '../static/image/bgLine.svg';
+import About from './About';
+
+const ExpandContent = styled((props) => {
+  const { expand, ...other } = props;
+
+  return <IconButton {...other} />;
+})(({ theme, expand }) => ({
+  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
+  marginLeft: 'auto',
+  transition: theme.transitions.create('transform', {
+    duration: theme.transitions.duration.shortest,
+  }),
+}));
 
 export default function Intro() {
   const textRef = useRef();
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
 
   //   text-effect
   useEffect(() => {
@@ -79,9 +95,27 @@ export default function Intro() {
                 <LinkedIn fontSize="large" />
               </IconButton>
             </div>
-          </div>
-          <div>
-            <Arrow />
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                paddingRight: 10,
+              }}
+            >
+              <ExpandContent
+                expand={expanded}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+              >
+                <Arrow />
+              </ExpandContent>
+              <h3>about me</h3>
+            </div>
+
+            {/* expanding content */}
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <About />
+            </Collapse>
           </div>
         </StyledDiv>
         <div style={{ position: 'absolute', right: 0 }}>

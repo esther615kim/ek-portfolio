@@ -6,8 +6,8 @@ export default function Arrow({ color }) {
   return (
     <div>
       <StyledDiv bg={color}>
-        <a href="#stack">
-          <KeyboardArrowDown style={{ fontSize: '3rem' }} />
+        <a href="#">
+          <KeyboardArrowDown style={{ fontSize: '2.5rem' }} />
         </a>
       </StyledDiv>
     </div>
@@ -15,10 +15,10 @@ export default function Arrow({ color }) {
 }
 
 const StyledDiv = styled.div`
-  position: absolute;
+  /* position: absolute; */
   /* bottom: 10%; */
   animation: arrowUpDown 2s infinite;
-  animation-delay: ${({ delay }) => delay || '3s'};
+  animation-delay: ${({ delay }) => delay || '10s'};
 
   @keyframes arrowUpDown {
     100% {
