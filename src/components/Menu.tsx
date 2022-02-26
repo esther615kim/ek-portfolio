@@ -13,19 +13,19 @@ const Menu = () => {
       <button
       value="about"
       onClick={handleClickCard} 
-      className="hover:text-cyan-300 mx-2 font-medium">ABOUT
+      className="hover:text-red-400 mx-2 font-medium">ABOUT
       </button>
       <span>/</span>
       <button
       value="work"
       onClick={handleClickCard} 
-      className="hover:text-cyan-300 mx-2 font-medium">WORK
+      className="hover:text-red-400 mx-2 font-medium">WORK
       </button>
       <span>/</span>
       <button
       value="contact"
       onClick={handleClickCard} 
-      className="hover:text-cyan-300 mx-2 font-medium">CONTACT
+      className="hover:text-red-400 mx-2 font-medium">CONTACT
       </button>
 
 

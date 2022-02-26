@@ -23,8 +23,9 @@ function App() {
       <div className="p-5 my-2 col-span-12 rounded-md bg-black text-white">
         <Menu />
       </div>
-
-      <div className="py-5 h-full lg:rounded-l-lg col-span-12 bg-cyan-300 lg:col-span-3 relative">
+      
+      <div className="py-5 h-full lg:rounded-l-lg col-span-12 bg-gradient-to-r from-violet-400 to-indigo-400 lg:col-span-3 relative">
+      {/* <div className="py-5 h-full lg:rounded-l-lg col-span-12 bg-cyan-300 lg:col-span-3 relative"> */}
         {/* <div className="col-span-12 bg-red-500 lg:col-span-3 relative"> */}
         <div className="invisible lg:visible lg:absolute top-20 lg:-right-8 h-16 w-16 bg-white shadow-md lg:rounded-lg transform lg:rotate-45"></div>
         <Side />
