@@ -36,7 +36,7 @@ const Tech = () => {
                 <h4 className="my-5 font-medium">Front End</h4>
                 <ul className="my-2 grid grid-cols-2">
                   <li className="grid justify-center content-center grid-span-1">
-                    <SiJavascript className="ml-3 w-10 h-10 m-2 text-yellow-400" />
+                    <SiJavascript className="ml-4 w-10 h-10 m-2 text-yellow-400" />
                     <p className="text-red">JavaScript</p>
                   </li>
 
@@ -85,7 +85,7 @@ const Tech = () => {
                 <h4 className="my-5 font-medium">Back End</h4>
                 <ul className="my-2 grid grid-cols-2">
                   <li className="grid justify-center content-center grid-span-1">
-                    <SiNodedotjs className="w-10 h-10 m-2 text-lime-600" />
+                    <SiNodedotjs className="ml-2 w-10 h-10 m-2 text-lime-600" />
                     <p className="text-red">Node.js</p>
                   </li>
 
@@ -95,7 +95,7 @@ const Tech = () => {
                   </li>
 
                   <li className="grid justify-center content-center grid-span-1">
-                    <SiGraphql className=" w-10 h-10 m-2 text-pink-600" />
+                    <SiGraphql className="ml-2 w-10 h-10 m-2 text-pink-600" />
                     <p className="text-red">GraphQL</p>
                   </li>
 
@@ -105,38 +105,49 @@ const Tech = () => {
                   </li>
 
                   <li className="grid justify-center content-center grid-span-1">
-                    <SiFirebase className="w-10 h-10 m-2 text-amber-400" />
+                    <SiFirebase className="w-10 h-10 m-2 ml-1 text-amber-400" />
                     <p className="text-red">Firebase</p>
                   </li>
 
                   <li className="grid justify-center content-center grid-span-1">
-                    <SiPostgresql className="ml-4 w-10 h-10 m-2 text-sky-700" />
+                    <SiPostgresql className="ml-5 w-10 h-10 m-2 text-sky-700" />
                     <p className="text-red">PostgreSQL</p>
                   </li>
 
                   <li className="grid flex-wrap justify-center content-center grid-span-1">
-                    <SiMysql className="w-10 h-10 m-2 text-orange-400" />
+                    <SiMysql className="w-10 h-10 m-2 ml-1 text-orange-400" />
                     <p className="width-10 text-red">
                       mySQL
                     </p>
                   </li>
-
                   <li className="grid justify-center content-center grid-span-1">
-                    <SiJest className="w-10 h-10 m-2 text-pink-800" />
+                    <SiJest className="pt-1 w-10 h-10 m-2 ml-0 text-pink-800" />
                     <p className="text-red">Jest</p>
                   </li>
                 </ul>
               </div>
 
-              {/* OTHERS */}
-              <div className="bg-stone-200 rounded-md">
-                <h4 className="mt-2 font-medium">Others</h4>
-                <ul className="my-2 grid-cols-2">
-                  <li>Git & Github</li>
-                  <li>Figma</li>
-                  <li>Python</li>
+                {/* Others */}
+              <div className="pb-5 bg-zinc-800 rounded-md text-zinc-200">
+                <h4 className="my-5 font-medium">Others</h4>
+                <ul className="my-2 grid grid-cols-2">
+                  <li className="grid justify-center content-center grid-span-1">
+                    <SiGithub className="w-10 h-10 m-2 text-stone-100" />
+                    <p className="text-red text-xs">Git/Github</p>
+                  </li>
+
+                  <li className="grid justify-center content-center grid-span-1">
+                    <SiPython className=" w-10 h-10 m-2 text-sky-700" />
+                    <p className="text-red">Python</p>
+                  </li>
+                  
+                  <li className="grid justify-center content-center grid-span-1">
+                    <SiFigma className="pt-1 w-10 h-10 m-2 text-red-500" />
+                    <p className="text-red">Figma</p>
+                  </li>
                 </ul>
               </div>
+
             </div>
           </div>
         </div>
