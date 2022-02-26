@@ -12,4 +12,6 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ### What I've Learned
+- Tailwindcss https://tailwindcss.com/docs/user-select#selecting-all-text-in-one-click
+- 
 

@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react';
+import CardContext from '../context/CardContext';
 
 const Menu = () => {
-  const [card,setCard] = useState("about");
+
+  const {setCardItem}:{setCardItem:any} = useContext(CardContext);
   const handleClickCard = (e)=>{
     e.preventDefault();
-    setCard(prev => e.target.value);
-    console.log(card);
+    setCardItem(prev => e.target.value);
   }
   return (
     <div>
