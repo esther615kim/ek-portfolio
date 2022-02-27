@@ -3,10 +3,9 @@ import "./styles/global.css";
 import { CardContextProvider } from "./context/CardContext";
 import Menu from "./components/Menu";
 import Side from "./components/Side/Side";
-import About from "./components/Cards/About";
-import Contact from "./components/Cards/Contact";
-import Work from "./components/Cards/Work";
 import CardContext from "./context/CardContext";
+import Theme from './components/Theme';
+import Work from './components/Cards/Work/index';
 
 
 function App() {
@@ -32,9 +31,14 @@ function App() {
       </div>
       {/* CARD - display a different card depending on cardContext*/} 
       <div className="col-span-12 rounded-r-lg bg-stone-600 lg:col-span-9">
-       {(card===undefined ||'about') && <About />}
+        <Work/>
+       {/* {(card===undefined ||'about') && <About />}
        {(card==='work') && <Work />}
-       {(card==='contact') && <Contact />}
+       {(card==='contact') && <Contact />} */}
+      </div>
+      <div className=" text-xs text-stone-200 col-span-12 p-2">
+        <p className="m-2">darkmode</p>
+        <Theme/>
       </div>
     </div>
     </CardContextProvider>

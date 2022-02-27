@@ -2,10 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div>
-        <h3>contact</h3>
-    </div>
+    <div>index</div>
   )
 }
 
-export default Contact
+export default index

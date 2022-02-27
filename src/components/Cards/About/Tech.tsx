@@ -28,11 +28,11 @@ const Tech = () => {
       {/* TECH */}
       <div>
         <div className="lg:py-10">
-          <h3 className="my-5 text-left text-xl font-medium">Technologies</h3>
+          <h3 className="my-5 text-left text-xl font-medium text-red-400">Technologies</h3>
           <div>
             <div className="my-5 grid lg:grid-cols-3 gap-5">
               {/* FRONT END */}
-              <div className="pb-5 bg-zinc-800 rounded-md text-zinc-200">
+              <div className="pb-5 hover:bg-indigo-400 hover:text-zinc-800 bg-zinc-800 rounded-md text-zinc-200">
                 <h4 className="my-5 font-medium">Front End</h4>
                 <ul className="my-2 grid grid-cols-2">
                   <li className="grid justify-center content-center grid-span-1">
@@ -81,7 +81,7 @@ const Tech = () => {
               </div>
 
               {/* Backend */}
-              <div className="pb-5 bg-zinc-800 rounded-md text-zinc-200">
+              <div className="pb-5 hover:bg-indigo-400 hover:text-zinc-800 bg-zinc-800 rounded-md text-zinc-200">
                 <h4 className="my-5 font-medium">Back End</h4>
                 <ul className="my-2 grid grid-cols-2">
                   <li className="grid justify-center content-center grid-span-1">
@@ -116,9 +116,7 @@ const Tech = () => {
 
                   <li className="grid flex-wrap justify-center content-center grid-span-1">
                     <SiMysql className="w-10 h-10 m-2 ml-1 text-orange-400" />
-                    <p className="width-10 text-red">
-                      mySQL
-                    </p>
+                    <p className="width-10 text-red">mySQL</p>
                   </li>
                   <li className="grid justify-center content-center grid-span-1">
                     <SiJest className="pt-1 w-10 h-10 m-2 ml-0 text-pink-800" />
@@ -127,8 +125,8 @@ const Tech = () => {
                 </ul>
               </div>
 
-                {/* Others */}
-              <div className="pb-5 bg-zinc-800 rounded-md text-zinc-200">
+              {/* Others */}
+              <div className="pb-5 hover:bg-indigo-400 hover:text-zinc-800 bg-zinc-800 rounded-md text-zinc-200">
                 <h4 className="my-5 font-medium">Others</h4>
                 <ul className="my-2 grid grid-cols-2">
                   <li className="grid justify-center content-center grid-span-1">
@@ -140,14 +138,13 @@ const Tech = () => {
                     <SiPython className=" w-10 h-10 m-2 text-sky-700" />
                     <p className="text-red">Python</p>
                   </li>
-                  
+
                   <li className="grid justify-center content-center grid-span-1">
                     <SiFigma className="pt-1 w-10 h-10 m-2 text-red-500" />
                     <p className="text-red">Figma</p>
                   </li>
                 </ul>
               </div>
-
             </div>
           </div>
         </div>
