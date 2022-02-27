@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { FunctionComponent } from "react";
+import { IProject } from "../../../../types";
 
-const ProjectCard = () => {
+const ProjectCard: FunctionComponent<{
+  project: IProject;
+}> = ({
+  project: { name, image_url, category, description, github_url, deployed_url },
+}) => {
   return (
-    <div className="w-80 h-50 lg:w-140 lg:h-60 bg-pink-200 rounded-sm">ProjectCard</div>
-  )
-}
+    <div className="text-stone-200 bg-zinc-800 rounded-sm">
+        <img src={image_url} alt={name} />
+      {name}
+    </div>
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;
