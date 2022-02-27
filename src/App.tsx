@@ -30,7 +30,7 @@ function App() {
         <Side />
       </div>
       {/* CARD - display a different card depending on cardContext*/} 
-      <div className="col-span-12 rounded-r-lg bg-stone-600 lg:col-span-9">
+      <div className="p-5 col-span-12 rounded-r-lg bg-stone-600 lg:col-span-9">
         <Work/>
        {/* {(card===undefined ||'about') && <About />}
        {(card==='work') && <Work />}
