@@ -21,15 +21,15 @@ const Side = () => {
       {/* </p> */}
 
       {/* socials */}
-      <div className=" flex justify-around pb-5 px-20 my-5 text-stone-100 md:w-auto md:2-full">
+      <div className="bg-gradient-to-r from-zinc-700 to-zinc-800 flex justify-around py-4 md:px-10 px-20 space-x-2 my-5 text-stone-100 md:w-auto md:2-full">
         {/* <Link to="https://github.com/esther615kim"> */}
-        <AiOutlineLinkedin className="hover:text-black hover:scale-105 w-6 h-6 cursor-pointer" />
+        <AiOutlineLinkedin className="hover:text-cyan-300 hover:scale-105 w-6 h-6 cursor-pointer" />
         {/* </Link> */}
-        <AiFillGithub className="hover:text-black w-6 h-6 cursor-pointer" />
-        <AiFillCodeSandboxCircle className="hover:text-black w-6 h-6 cursor-pointer" />
+        <AiFillGithub className="hover:text-cyan-300 w-6 h-6 cursor-pointer" />
+        <AiFillCodeSandboxCircle className="hover:text-cyan-300 w-6 h-6 cursor-pointer" />
       </div>
       {/* <div className="py-3 my-5 bg-stone-200"> */}
-      <div className="py-3 my-5 bg-white">
+      <div className="py-3 my-5">
         <div className="flex items-center justify-center space-x-1 space-y-3">
           <GoLocation className="w-5 h-5" />
           <span className="block font-rubik">Rugby, UK</span>
@@ -40,7 +40,7 @@ const Side = () => {
         CV
       </p> */}
       <div className="space-y-2 pb-10 lg:pb-20">
-        <button className="hover:text-cyan-300 hover:scale-95 shadow-md font-poppins w-10/12 py-1 my-1 rounded-md mb-2 bg-gradient-to-r from-stone-100 to-gray-200">
+        <button className="hover:bg-cyan-300 hover:scale-95 shadow-md font-poppins w-10/12 py-1 my-1 rounded-md mb-2 bg-gradient-to-r from-stone-100 to-gray-200">
           CV
         </button>
         <button className="hover:scale-95 shadow-md font-poppins w-10/12 py-1 my-1 text-white rounded-md bg-gradient-to-r from-red-300 to-red-400">

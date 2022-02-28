@@ -19,7 +19,7 @@ function App() {
   return (
     <CardContextProvider>
     <div className="w-screen grid grid-cols-12 text-center lg:px-12">
-      <div className="p-5 my-2 col-span-12 rounded-md bg-black text-white">
+      <div className="p-5 mt-2 col-span-12 bg-zinc-800 text-white">
         <Menu />
       </div>
       
@@ -30,7 +30,7 @@ function App() {
         <Side />
       </div>
       {/* CARD - display a different card depending on cardContext*/} 
-      <div className="p-5 col-span-12 rounded-r-lg bg-stone-600 lg:col-span-9">
+      <div className="p-5 col-span-12 rounded-r-lg bg-zinc-700 lg:col-span-9">
         <Work/>
        {/* {(card===undefined ||'about') && <About />}
        {(card==='work') && <Work />}

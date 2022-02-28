@@ -9,4 +9,4 @@ export interface IProject{
 }
 
 
-export type Category="Front End"|"Back End"|"Mobie"
+export type Category="Front End"|"Back End"|"Mobile"

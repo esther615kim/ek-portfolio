@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 export default function Work() {
   return (
-    <div className="p-10 lg:px-12 col-span-12">
+    <div className="p-10 lg:px-12 xs:pb-20 col-span-12">
       <nav className="p-4 text-red-400">
         <Navbar/>
       </nav>

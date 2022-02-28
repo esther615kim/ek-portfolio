@@ -7,7 +7,7 @@ export const projects: IProject[] =[
         image_url:require("../image/invitation.png"),
         deployed_url:"",
         github_url:"",
-        category:["Front End","Mobie"],
+        category:["Front End","Mobile"],
         technologies:["React", "Chart.js","MUI"]
     },
     // {
@@ -25,7 +25,7 @@ export const projects: IProject[] =[
         image_url:require("../image/readit.png"),
         deployed_url:"",
         github_url:"",
-        category:["Front End","Back End","Mobie"],
+        category:["Front End","Back End","Mobile"],
         technologies:["React", "Node.js","MUI"]
     },
 ]
