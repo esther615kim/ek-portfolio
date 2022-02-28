@@ -3,7 +3,7 @@ import { FunctionComponent } from 'react';
 import { Category } from '../../../../types';
 
 
-export const NavListItems: FunctionComponent<{value:Category|"All",handleSetCategory:Function}> =({
+export const NavListItem: FunctionComponent<{value:Category|"All",handleSetCategory:Function}> =({
     value, handleSetCategory
 })=>{
     return <li 
@@ -14,11 +14,11 @@ export const NavListItems: FunctionComponent<{value:Category|"All",handleSetCate
 
 const Navbar:FunctionComponent<{handleSetCategory:Function}> = (props) => {
   return (
-    <div className="flex space-x-5 pt-5 py-2 list-none overflow-x-auto text-stone-200 text-lg text-medium">
-        <NavListItems value="All" {...props}/>
-        <NavListItems value="Front End" {...props}/>
-        <NavListItems value="Back End" {...props}/>
-        <NavListItems value="Mobile" {...props}/>
+    <div className="flex py-2 pt-5 space-x-5 overflow-x-auto text-lg list-none text-stone-200 text-medium">
+        <NavListItem value="All" {...props}/>
+        <NavListItem value="Front End" {...props}/>
+        <NavListItem value="Back End" {...props}/>
+        <NavListItem value="Mobile" {...props}/>
     </div>
   )
 }
