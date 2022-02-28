@@ -18,25 +18,24 @@ function App() {
 
   return (
     <CardContextProvider>
-    <div className="w-screen grid grid-cols-12 text-center lg:px-12">
-      <div className="p-5 mt-2 col-span-12 bg-zinc-800 text-white">
+    <div className="grid w-screen grid-cols-12 text-center lg:px-12">
+      <div className="col-span-12 p-5 mt-2 text-white bg-zinc-800">
         <Menu />
       </div>
-      
-      <div className="py-5 h-full lg:rounded-l-lg col-span-12 bg-gradient-to-r from-violet-400 to-indigo-400 lg:col-span-3 relative">
-      {/* <div className="py-5 h-full lg:rounded-l-lg col-span-12 bg-cyan-300 lg:col-span-3 relative"> */}
-        {/* <div className="col-span-12 bg-red-500 lg:col-span-3 relative"> */}
-        <div className="invisible lg:visible lg:absolute top-20 lg:-right-8 h-16 w-16 bg-white shadow-md lg:rounded-lg transform lg:rotate-45"></div>
+      {/* <div className="relative h-full col-span-12 py-5 bg-rose-300 lg:rounded-l-lg lg:col-span-3"> */}
+              <div className="relative h-full col-span-12 py-5 lg:rounded-l-lg bg-gradient-to-r from-rose-300 to-violet-400 lg:col-span-3">
+      {/* <div className="relative h-full col-span-12 py-5 lg:rounded-l-lg bg-gradient-to-r from-violet-400 to-indigo-400 lg:col-span-3"> */}
+
+        <div className="invisible w-16 h-16 transform bg-white shadow-md lg:visible lg:absolute top-20 lg:-right-8 lg:rounded-lg lg:rotate-45"></div>
         <Side />
       </div>
-      {/* CARD - display a different card depending on cardContext*/} 
-      <div className="p-5 col-span-12 rounded-r-lg bg-zinc-700 lg:col-span-9">
+      <div className="col-span-12 p-5 rounded-r-lg bg-zinc-700 lg:col-span-9">
         <Work/>
        {/* {(card===undefined ||'about') && <About />}
        {(card==='work') && <Work />}
        {(card==='contact') && <Contact />} */}
       </div>
-      <div className=" text-xs text-stone-200 col-span-12 p-2">
+      <div className="col-span-12 p-2 text-xs text-stone-200">
         <p className="m-2">darkmode</p>
         <Theme/>
       </div>

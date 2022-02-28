@@ -37,10 +37,11 @@ const Side = () => {
       <div className="pb-10 space-y-2 lg:pb-20">
         <button
         onClick={()=>{window.location.href="https://resume.io/r/6KtYGMKR3"}} 
-        className="w-10/12 py-1 my-1 mb-2 rounded-md shadow-md hover:bg-cyan-300 hover:scale-95 font-poppins bg-gradient-to-r from-stone-100 to-gray-200">
+        className="w-10/12 py-1 my-1 mb-2 rounded-md shadow-md hover:scale-95 font-poppins bg-gradient-to-r from-stone-100 to-gray-200 hover:text-red-400">
           CV
         </button>
-        <button className="w-10/12 py-1 my-1 text-white rounded-md shadow-md hover:scale-95 font-poppins bg-gradient-to-r from-red-300 to-red-400">
+        <button className="w-10/12 py-1 my-1 rounded-md shadow-md text-stone-100 hover:scale-95 font-poppins bg-zinc-700 hover:text-cyan-300"> 
+        {/* <button className="w-10/12 py-1 my-1 text-white rounded-md shadow-md hover:scale-95 font-poppins bg-gradient-to-r from-red-300 to-red-400"> */}
           Contact Me
         </button>
       </div>
