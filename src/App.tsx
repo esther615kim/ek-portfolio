@@ -31,8 +31,8 @@ function App() {
         <Side />
       </div>
       <div className="col-span-12 p-5 rounded-r-lg bg-zinc-700 lg:col-span-9">
-        {/* <Work/> */}
-        <Contact />
+        <Work/>
+        {/* <Contact /> */}
        {/* {(card===undefined ||'about') && <About />}
        {(card==='work') && <Work />}
        {(card==='contact') && <Contact />} */}
