@@ -4,6 +4,7 @@ import CardContext from '../context/CardContext';
 const Menu = () => {
 
   const {setCardItem}:{setCardItem:any} = useContext(CardContext);
+
   const handleClickCard = (e)=>{
     e.preventDefault();
     setCardItem(prev => e.target.value);
@@ -13,19 +14,19 @@ const Menu = () => {
       <button
       value="about"
       onClick={handleClickCard} 
-      className="hover:text-red-400 mx-2 font-medium">ABOUT
+      className="mx-2 font-medium hover:text-red-400">ABOUT
       </button>
       <span>/</span>
       <button
       value="work"
       onClick={handleClickCard} 
-      className="hover:text-red-400 mx-2 font-medium">WORK
+      className="mx-2 font-medium hover:text-red-400">WORK
       </button>
       <span>/</span>
       <button
       value="contact"
       onClick={handleClickCard} 
-      className="hover:text-red-400 mx-2 font-medium">CONTACT
+      className="mx-2 font-medium hover:text-red-400">CONTACT
       </button>
 
 

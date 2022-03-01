@@ -6,6 +6,7 @@ import Side from "./components/Side/Side";
 import CardContext from "./context/CardContext";
 import Theme from './components/Theme';
 import Work from './components/Cards/Work/index';
+import Contact from './components/Cards/Contact/index';
 
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
         <Side />
       </div>
       <div className="col-span-12 p-5 rounded-r-lg bg-zinc-700 lg:col-span-9">
-        <Work/>
+        {/* <Work/> */}
+        <Contact />
        {/* {(card===undefined ||'about') && <About />}
        {(card==='work') && <Work />}
        {(card==='contact') && <Contact />} */}

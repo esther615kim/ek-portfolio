@@ -27,10 +27,10 @@ const ProjectCard: FunctionComponent<{
     setDisplayDetails((prev) => !prev);
   };
   return (
-    <div className="text-stone-200 shadow-md bg-zinc-800 rounded-lg">
-      {/* details */}
+    <div className="rounded-lg shadow-md text-stone-200 bg-zinc-800">
+      {/* DETAILS */}
       {displayDetails && (
-        <div className="absolute grid md:grid-cols-2 top-0 left-0 z-1 h-auto w-full rounded-lg bg-zinc-800">
+        <div className="absolute top-0 left-0 z-20 grid w-full h-auto rounded-lg md:grid-cols-2 bg-zinc-800">
           <img src={image_url} alt={name} />
           <div className="relative pt-5 pb-10 md:pb-0 md:pt-10">
             <h3 className="mb-4 font-semibold md:text-lg">{name}</h3>
@@ -38,16 +38,16 @@ const ProjectCard: FunctionComponent<{
             <div>
               {technologies.map((item) => (
                 <span
-                  className="mx-1 text-xs bg-red-400 text-zinc-800 p-1 px-2 rounded-md"
+                  className="p-1 px-2 mx-1 text-xs bg-red-400 rounded-md text-zinc-800"
                   key={item}
                 >
                   {item}
                 </span>
               ))}
             </div>
-            <div className="md:absolute bottom-10 w-full grid grid-cols-2 px-2">
+            <div className="grid w-full grid-cols-2 px-2 md:absolute bottom-10">
               <a
-                className="flex items-center justify-center my-3 py-1 px-4 mx-5 space-x-2 bg-zinc-700 rounded-sm"
+                className="flex items-center justify-center px-4 py-1 mx-5 my-3 space-x-2 rounded-sm bg-zinc-700"
                 href={github_url}
               >
                 <AiFillGithub />
@@ -55,7 +55,7 @@ const ProjectCard: FunctionComponent<{
               </a>
 
               <a
-                className="flex items-center justify-center my-3 py-1 px-4 mx-5 space-x-2 bg-zinc-700 rounded-sm"
+                className="flex items-center justify-center px-4 py-1 mx-5 my-3 space-x-2 rounded-sm bg-zinc-700"
                 href={github_url}
               >
                 <AiOutlineFundProjectionScreen />
@@ -72,15 +72,17 @@ const ProjectCard: FunctionComponent<{
           </button>
         </div>
       )}
-      <div>
+      {/* CARD */}
+      <div className="relative">
         <img
-          className="object-cover h-50 w-100 cursor-pointer rounded-sm"
+          className="z-10 object-cover rounded-lg cursor-pointer hover:bg-zinc-800 hover:z-0 hover:opacity-50 h-50 w-100"
           src={image_url}
           alt={name}
           onClick={handleClickShowDetails}
         />
-        <p className="p-2"> {name}</p>
+        <p style={{transform:"translate(-50%,-50%)"}}className="absolute z-0 w-full text-lg font-semibold text-white inset-2/4 "> {name}</p>
       </div>
+
     </div>
   );
 };
