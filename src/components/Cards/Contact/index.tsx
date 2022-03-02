@@ -1,7 +1,7 @@
 import { AiOutlineMail, AiOutlineMobile } from "react-icons/ai";
 export default function Contact() {
   return (
-    <div className="h-full p-5 md:p-20 xl:mx-20 ">
+    <div className="h-full pt-5 md:mt-20 md:p-10 xl:mx-20 ">
       <div className="grid h-full grid-cols-2 pt-10 rounded-lg md:p-20 sm:pt-0 bg-zinc-800">
         <div className="grid content-end py-20 sm:p-10 text-stone-200">
           <h1 className="ml-1 text-xl font-bold text-left">Contact me.</h1>
@@ -17,7 +17,7 @@ export default function Contact() {
 
         </div>
         {/* FORM */}
-        <div className="p-5 m-5 rounded-lg md:pt-10 bg-stone-200">
+        <div className="px-5 py-10 m-5 rounded-lg md:pt-10 bg-stone-200">
           <h1 className="my-10 text-xl font-bold">Let's talk</h1>
           <form action="submit">
             <input
@@ -31,7 +31,7 @@ export default function Contact() {
               placeholder="EMAIL"
             />
             <textarea
-              className="w-full px-5 py-1 mb-5 rounded-md h-1/5"
+              className="w-full px-5 py-1 mb-5 rounded-md"
               placeholder="MESSAGE"
             ></textarea>
             <button className="w-full px-5 py-1 mb-5 rounded-md shadow-md text-stone-100 hover:scale-95 font-poppins bg-zinc-700">

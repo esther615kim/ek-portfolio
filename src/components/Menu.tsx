@@ -16,6 +16,7 @@ const Menu = () => {
   
   return (
     <div>
+      <div className="md:text-lg text-stone-200">
       <button
         value="about"
         onClick={handleClickCard}
@@ -39,6 +40,7 @@ const Menu = () => {
       >
         CONTACT
       </button>
+      </div>
       {card === "about" && <About />}
       {card === "work" && <Work />}
       {card === "contact" && <Contact />}
