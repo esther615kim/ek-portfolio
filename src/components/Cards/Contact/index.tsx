@@ -1,5 +1,26 @@
 import { AiOutlineMail, AiOutlineMobile } from "react-icons/ai";
+import emailjs from "emailjs-com";
+
 export default function Contact() {
+
+  // const EMAIL = `${process.env.REACT_APP_EMAIL}`
+
+  // // const EMAIL= "service_q9x4rkw";
+  // const TEMPLATE ="template_sej9wz8";
+  // const USER_ID = "LgXDgZPxNEJJKTZbo";
+
+  const handleSubmitForm = (e:React.ChangeEvent<HTMLInputElement>):void =>{
+
+    e.preventDefault();
+    emailjs.sendForm(process.env.REACT_APP_EMAIL,
+      process.env.REACT_APP_TEMPLATE,
+      e.target,
+      process.env.REACT_APP_USER_ID)
+    .then(res=>{
+      console.log(res)
+    }).catch(err=> console.error(err));
+
+  }
   return (
     <div className="h-full md:mt-20 md:p-10  xl:px-20 ">
       <div className="grid h-full md:grid-cols-2 rounded-lg bg-zinc-800">
@@ -19,22 +40,25 @@ export default function Contact() {
         {/* FORM */}
         <div className="px-5 py-10 m-5 2xl:m-10 rounded-lg md:pt-10 bg-stone-200">
           <h1 className="my-10 text-xl font-bold">Let's talk</h1>
-          <form action="submit">
+          <form onSubmit={ handleSubmitForm} action="submit">
             <input
               className="w-full px-5 py-1 mb-5 rounded-md"
               type="text"
+              name="name"
               placeholder="FIRST NAME"
             />
             <input
               className="w-full px-5 py-1 mb-5 rounded-md"
               type="text"
+              name="email"
               placeholder="EMAIL"
             />
             <textarea style={{height:160}}
               className="w-full px-5 py-1 mb-5 rounded-md"
+              name="message"
               placeholder="MESSAGE"
             ></textarea>
-            <button className="w-full px-5 py-1 mb-5 rounded-md shadow-md text-stone-100 hover:scale-95 font-poppins bg-zinc-700">
+            <button type="submit" className="w-full px-5 py-1 mb-5 rounded-md shadow-md text-stone-100 hover:scale-95 font-poppins bg-zinc-700">
               SEND
             </button>
           </form>
