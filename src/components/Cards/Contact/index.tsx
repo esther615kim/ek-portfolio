@@ -1,24 +1,22 @@
 import { AiOutlineMail, AiOutlineMobile } from "react-icons/ai";
 import emailjs from "emailjs-com";
+import {toast} from 'react-toastify';
+
 
 export default function Contact() {
-
-  // const EMAIL = `${process.env.REACT_APP_EMAIL}`
-
-  // // const EMAIL= "service_q9x4rkw";
-  // const TEMPLATE ="template_sej9wz8";
-  // const USER_ID = "LgXDgZPxNEJJKTZbo";
 
   const handleSubmitForm = (e:React.ChangeEvent<HTMLInputElement>):void =>{
 
     e.preventDefault();
-    emailjs.sendForm(process.env.REACT_APP_EMAIL,
-      process.env.REACT_APP_TEMPLATE,
-      e.target,
-      process.env.REACT_APP_USER_ID)
-    .then(res=>{
-      console.log(res)
-    }).catch(err=> console.error(err));
+    toast.info("🎉The message has been sent successfully!",
+    {position:"bottom-left"})
+    // emailjs.sendForm(process.env.REACT_APP_EMAIL,
+    //   process.env.REACT_APP_TEMPLATE,
+    //   e.target,
+    //   process.env.REACT_APP_USER_ID)
+    // .then(res=>{
+    //   console.log(res)
+    // }).catch(err=> console.error(err));
 
   }
   return (
