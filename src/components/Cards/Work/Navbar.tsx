@@ -7,7 +7,7 @@ export const NavListItem: FunctionComponent<{value:Category|"All",handleSetCateg
     value, handleSetCategory
 })=>{
     return <li 
-    className="px-2 py-1 text-xs font-semibold text-red-400 rounded-lg cursor-pointer hover:text-white md:text-lg"
+    className="px-2 py-1 text-xs dark:font-semibold font-sacramento bg-zinc-600 opacity-80 hover:text-zinc-800 dark:text-red-400 rounded-lg cursor-pointer hover:bg-rose-300 md:text-lg"
     onClick={()=>handleSetCategory(value)}
     >{value}</li>
 }

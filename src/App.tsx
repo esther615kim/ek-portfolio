@@ -21,10 +21,10 @@ function App() {
         <div className="col-span-12 p-5 rounded-r-lg bg-white dark:bg-zinc-700 lg:col-span-9">
         <Menu />
         </div>
-        <div className="col-span-12 pt-2 text-xs dark:first:text-stone-200">
+        {/* <div className="col-span-12 pt-2 text-xs dark:text-stone-200">
           <p className="m-2">darkmode</p>
           <Theme />
-        </div>
+        </div> */}
       </div>
     </CardContextProvider>
   );

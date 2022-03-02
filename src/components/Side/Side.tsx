@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import {
   AiFillGithub,
@@ -8,6 +8,19 @@ import {
 import { GoLocation } from "react-icons/go";
 
 const Side = () => {
+
+
+  const changeDarkTheme = ():void => {
+    const root = window.document.body;
+    if(root.className ==="dark"){
+      root.classList.replace("dark","light")
+    }else{
+      root.classList.replace("light","dark")
+    }
+
+  };
+
+
   return (
     <div>
       <h3 className="mt-10 text-3xl font-semibold tracking-wider text-white lg:mt-20 lg:pt-40 font-oohhbaby">
@@ -37,11 +50,13 @@ const Side = () => {
       <div className="pb-10 space-y-2 lg:pb-20">
         <button
         onClick={()=>{window.location.href="https://resume.io/r/6KtYGMKR3"}} 
-        className="w-10/12 py-1 my-1 mb-2 rounded-md shadow-md hover:scale-95 font-poppins bg-gradient-to-r from-stone-100 to-gray-200 hover:text-red-400">
+        className="w-10/12 py-1 my-1 mb-2 rounded-md shadow-md hover:scale-95 font-poppins bg-gradient-to-r from-stone-100 to-gray-200 hover:text-red-500">
           CV
         </button>
-        <button className="w-10/12 py-1 my-1 rounded-md shadow-md text-stone-100 hover:scale-95 font-poppins bg-zinc-700 hover:text-cyan-300"> 
-          Contact Me
+        <button 
+        onClick={changeDarkTheme}
+        className="w-10/12 py-1 my-1 rounded-md shadow-md dark:text-stone-100 hover:scale-95 font-poppins dark:bg-zinc-700 hover:text-red-500 bg-indigo-200"> 
+          Change Theme
         </button>
       </div>
     </div>

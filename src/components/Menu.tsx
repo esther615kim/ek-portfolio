@@ -16,7 +16,7 @@ const Menu = () => {
   
   return (
     <div>
-      <div className="md:text-lg dark:text-stone-200">
+      <div className="md:text-lg text-zinc-600 dark:text-stone-200">
       <button
         value="about"
         onClick={handleClickCard}
