@@ -16,11 +16,11 @@ const Menu = () => {
   
   return (
     <div>
-      <div className="md:text-lg text-stone-200">
+      <div className="md:text-lg dark:text-stone-200">
       <button
         value="about"
         onClick={handleClickCard}
-        className="mx-2 font-medium hover:text-red-400"
+        className="mx-2 font-semibold hover:text-red-400"
       >
         ABOUT
       </button>
@@ -28,7 +28,7 @@ const Menu = () => {
       <button
         value="work"
         onClick={handleClickCard}
-        className="mx-2 font-medium hover:text-red-400"
+        className="mx-2 font-semibold hover:text-red-400"
       >
         WORK
       </button>
@@ -36,7 +36,7 @@ const Menu = () => {
       <button
         value="contact"
         onClick={handleClickCard}
-        className="mx-2 font-medium hover:text-red-400"
+        className="mx-2 font-semibold hover:text-red-400"
       >
         CONTACT
       </button>

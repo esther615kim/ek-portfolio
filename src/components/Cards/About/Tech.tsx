@@ -32,7 +32,7 @@ const Tech = () => {
           <div>
             <div className="grid gap-5 my-5 lg:grid-cols-3">
               {/* FRONT END */}
-              <div className="py-10 rounded-md hover:bg-indigo-400 hover:opacity-80 hover:font-semibold hover:text-zinc-800 bg-zinc-800 text-zinc-200">
+              <div className="py-10 rounded-md hover:bg-indigo-400 hover:opacity-80 hover:font-semibold hover:text-zinc-800 bg-gray-100 dark:bg-zinc-800 dark:text-zinc-200">
                 <h4 className="my-5 font-semibold">Front End</h4>
                 <ul className="grid grid-cols-2 my-2">
                   <li className="grid content-center justify-center grid-span-1">
@@ -81,7 +81,7 @@ const Tech = () => {
               </div>
 
               {/* Backend */}
-              <div className="py-10 rounded-md hover:bg-indigo-400 hover:opacity-80 hover:font-semibold hover:text-zinc-800 bg-zinc-800 text-zinc-200">
+              <div className="py-10 rounded-md hover:bg-indigo-400 hover:opacity-80 hover:font-semibold hover:text-zinc-800 bg-gray-100 dark:bg-zinc-800 dark:text-zinc-200">
                 <h4 className="my-5 font-semibold">Back End</h4>
                 <ul className="grid grid-cols-2 my-2">
                   <li className="grid content-center justify-center grid-span-1">
@@ -90,7 +90,7 @@ const Tech = () => {
                   </li>
 
                   <li className="grid content-center justify-center grid-span-1">
-                    <SiExpress className="w-10 h-10 m-2 text-stone-200" />
+                    <SiExpress className="w-10 h-10 m-2 dark:text-stone-200" />
                     <p className="text-red">Express</p>
                   </li>
 
@@ -126,11 +126,11 @@ const Tech = () => {
               </div>
 
               {/* Others */}
-              <div className="py-10 rounded-md hover:bg-indigo-400 hover:opacity-80 hover:font-semibold hover:text-zinc-800 bg-zinc-800 text-zinc-200">
+              <div className="py-10 rounded-md hover:bg-indigo-400 hover:opacity-80 hover:font-semibold hover:text-zinc-800 bg-gray-100 dark:bg-zinc-800 dark:text-zinc-200">
                 <h4 className="my-5 font-semibold">Others</h4>
                 <ul className="grid grid-cols-2 my-2">
                   <li className="grid content-center justify-center grid-span-1">
-                    <SiGithub className="w-10 h-10 m-2 text-stone-100" />
+                    <SiGithub className="w-10 h-10 m-2 dark:text-stone-100" />
                     <p className="text-xs text-red">Git/Github</p>
                   </li>
 

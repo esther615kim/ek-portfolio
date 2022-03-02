@@ -18,7 +18,7 @@ const Side = () => {
       </p>
 
       {/* socials */}
-      <div className="flex justify-around px-20 py-4 my-5 space-x-2 bg-gradient-to-r from-zinc-700 to-zinc-800 md:px-10 text-stone-100 md:w-auto md:2-full">
+      <div className="flex justify-around px-20 py-4 my-5 space-x-2 bg-gradient-to-r dark:opacity-95 opacity-75 from-zinc-700 to-zinc-800 md:px-10 text-stone-100 md:w-auto md:2-full">
         <AiOutlineLinkedin className="w-6 h-6 cursor-pointer hover:text-cyan-300 hover:scale-105" />
         <AiFillGithub 
          onClick={()=>{window.location.href="https://github.com/esther615kim"}} 
@@ -41,7 +41,6 @@ const Side = () => {
           CV
         </button>
         <button className="w-10/12 py-1 my-1 rounded-md shadow-md text-stone-100 hover:scale-95 font-poppins bg-zinc-700 hover:text-cyan-300"> 
-        {/* <button className="w-10/12 py-1 my-1 text-white rounded-md shadow-md hover:scale-95 font-poppins bg-gradient-to-r from-red-300 to-red-400"> */}
           Contact Me
         </button>
       </div>

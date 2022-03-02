@@ -4,5 +4,10 @@
 
 
 body{
+    /* background:#f2f9fc; */
+    background-color: #d1dce6;
+}
+
+.dark{
     background-color:#27272a;
 }

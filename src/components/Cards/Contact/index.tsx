@@ -21,9 +21,9 @@ export default function Contact() {
   }
   return (
     <div className="h-full md:mt-20 md:p-10  xl:px-20 ">
-      <div className="grid h-full md:grid-cols-2 rounded-lg bg-zinc-800">
+      <div className="grid h-full md:grid-cols-2 rounded-lg dark:bg-zinc-800">
         
-         <div className="p-5 2xl:px-10 grid content-end md:py-20 text-stone-200">
+         <div className="p-5 2xl:px-10 grid content-end md:py-20 dark:text-stone-200">
           <h1 className="ml-1 text-xl font-bold text-left">Contact me.</h1>
           <div className="flex items-center font-semibold text-md ">
             <AiOutlineMobile className="mr-2" />
