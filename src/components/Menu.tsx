@@ -1,37 +1,49 @@
-import React, { useState,useContext } from 'react';
-import CardContext from '../context/CardContext';
+import React, { useState, useEffect } from "react";
+import { MenuOptions } from "../context/CardContext";
+import About from "./Cards/About/index";
+import Work from "./Cards/Work/index";
+import Contact from "./Cards/Contact/index";
 
 const Menu = () => {
+  const [card, setCard] = useState<MenuOptions>("about");
 
-  const {setCardItem}:{setCardItem:any} = useContext(CardContext);
+  useEffect(() => {}, [card]);
 
-  const handleClickCard = (e)=>{
+  const handleClickCard = (e) => {
     e.preventDefault();
-    setCardItem(prev => e.target.value);
-  }
+    setCard((prev) => e.target.value);
+  };
+  
   return (
     <div>
       <button
-      value="about"
-      onClick={handleClickCard} 
-      className="mx-2 font-medium hover:text-red-400">ABOUT
+        value="about"
+        onClick={handleClickCard}
+        className="mx-2 font-medium hover:text-red-400"
+      >
+        ABOUT
       </button>
       <span>/</span>
       <button
-      value="work"
-      onClick={handleClickCard} 
-      className="mx-2 font-medium hover:text-red-400">WORK
+        value="work"
+        onClick={handleClickCard}
+        className="mx-2 font-medium hover:text-red-400"
+      >
+        WORK
       </button>
       <span>/</span>
       <button
-      value="contact"
-      onClick={handleClickCard} 
-      className="mx-2 font-medium hover:text-red-400">CONTACT
+        value="contact"
+        onClick={handleClickCard}
+        className="mx-2 font-medium hover:text-red-400"
+      >
+        CONTACT
       </button>
-
-
-      </div>
-  )
-}
+      {card === "about" && <About />}
+      {card === "work" && <Work />}
+      {card === "contact" && <Contact />}
+    </div>
+  );
+};
 
 export default Menu;

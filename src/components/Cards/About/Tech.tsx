@@ -28,119 +28,119 @@ const Tech = () => {
       {/* TECH */}
       <div>
         <div className="lg:py-10">
-          <h3 className="my-5 text-left text-xl font-medium text-red-400">Technologies</h3>
+          <h3 className="my-5 text-xl font-medium text-left text-red-400">Technologies</h3>
           <div>
-            <div className="my-5 grid lg:grid-cols-3 gap-5">
+            <div className="grid gap-5 my-5 lg:grid-cols-3">
               {/* FRONT END */}
-              <div className="pb-5 hover:bg-indigo-400 hover:text-zinc-800 bg-zinc-800 rounded-md text-zinc-200">
-                <h4 className="my-5 font-medium">Front End</h4>
-                <ul className="my-2 grid grid-cols-2">
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiJavascript className="ml-4 w-10 h-10 m-2 text-yellow-400" />
+              <div className="pb-5 rounded-md hover:bg-indigo-400 hover:opacity-80 hover:font-semibold hover:text-zinc-800 bg-zinc-800 text-zinc-200">
+                <h4 className="my-5 font-semibold">Front End</h4>
+                <ul className="grid grid-cols-2 my-2">
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiJavascript className="w-10 h-10 m-2 ml-4 text-yellow-400" />
                     <p className="text-red">JavaScript</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiReact className=" w-10 h-10 m-2 text-cyan-300" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiReact className="w-10 h-10 m-2 text-cyan-300" />
                     <p className="text-red">React</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiReact className=" w-10 h-10 m-2 text-cyan-300" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiReact className="w-10 h-10 m-2 text-cyan-300" />
                     <p className="text-red">React N</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiTypescript className="ml-4 w-10 h-10 m-2 text-blue-700" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiTypescript className="w-10 h-10 m-2 ml-4 text-blue-700" />
                     <p className="text-red">TypeScript</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiRedux className="ml-3 w-10 h-10 m-2 text-violet-500" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiRedux className="w-10 h-10 m-2 ml-3 text-violet-500" />
                     <p className="text-red">Redux</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiMaterialui className="ml-3 w-10 h-10 m-2 text-blue-500" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiMaterialui className="w-10 h-10 m-2 ml-3 text-blue-500" />
                     <p className="text-red">JavaScript</p>
                   </li>
 
-                  <li className="grid flex-wrap justify-center content-center grid-span-1">
-                    <SiStyledcomponents className="ml-5 w-10 h-10 m-2 text-pink-400" />
-                    <p className="break-all text-xs width-10 text-red">
+                  <li className="grid flex-wrap content-center justify-center grid-span-1">
+                    <SiStyledcomponents className="w-10 h-10 m-2 ml-5 text-pink-400" />
+                    <p className="text-xs break-all width-10 text-red">
                       styled
                     </p>
-                    <p className="text-red text-xs">coomponents</p>
+                    <p className="text-xs text-red">coomponents</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiTailwindcss className="ml-3 w-10 h-10 m-2 text-sky-400" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiTailwindcss className="w-10 h-10 m-2 ml-3 text-sky-400" />
                     <p className="text-red">tailwindcss</p>
                   </li>
                 </ul>
               </div>
 
               {/* Backend */}
-              <div className="pb-5 hover:bg-indigo-400 hover:text-zinc-800 bg-zinc-800 rounded-md text-zinc-200">
-                <h4 className="my-5 font-medium">Back End</h4>
-                <ul className="my-2 grid grid-cols-2">
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiNodedotjs className="ml-2 w-10 h-10 m-2 text-lime-600" />
+              <div className="pb-5 rounded-md hover:bg-indigo-400 hover:opacity-80 hover:font-semibold hover:text-zinc-800 bg-zinc-800 text-zinc-200">
+                <h4 className="my-5 font-semibold">Back End</h4>
+                <ul className="grid grid-cols-2 my-2">
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiNodedotjs className="w-10 h-10 m-2 ml-2 text-lime-500" />
                     <p className="text-red">Node.js</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiExpress className=" w-10 h-10 m-2 text-stone-200" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiExpress className="w-10 h-10 m-2 text-stone-200" />
                     <p className="text-red">Express</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiGraphql className="ml-2 w-10 h-10 m-2 text-pink-600" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiGraphql className="w-10 h-10 m-2 ml-2 text-pink-600" />
                     <p className="text-red">GraphQL</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiMongodb className="ml-4 w-10 h-10 m-2 text-green-600" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiMongodb className="w-10 h-10 m-2 ml-4 text-green-600" />
                     <p className="text-red">Mongodb</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
+                  <li className="grid content-center justify-center grid-span-1">
                     <SiFirebase className="w-10 h-10 m-2 ml-1 text-amber-400" />
                     <p className="text-red">Firebase</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiPostgresql className="ml-5 w-10 h-10 m-2 text-sky-700" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiPostgresql className="w-10 h-10 m-2 ml-5 text-sky-700" />
                     <p className="text-red">PostgreSQL</p>
                   </li>
 
-                  <li className="grid flex-wrap justify-center content-center grid-span-1">
-                    <SiMysql className="w-10 h-10 m-2 ml-1 text-orange-400" />
+                  <li className="grid flex-wrap content-center justify-center grid-span-1">
+                    <SiMysql className="w-10 h-10 m-2 ml-1 text-orange-500" />
                     <p className="width-10 text-red">mySQL</p>
                   </li>
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiJest className="pt-1 w-10 h-10 m-2 ml-0 text-pink-800" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiJest className="w-10 h-10 pt-1 m-2 ml-0 text-pink-800" />
                     <p className="text-red">Jest</p>
                   </li>
                 </ul>
               </div>
 
               {/* Others */}
-              <div className="pb-5 hover:bg-indigo-400 hover:text-zinc-800 bg-zinc-800 rounded-md text-zinc-200">
-                <h4 className="my-5 font-medium">Others</h4>
-                <ul className="my-2 grid grid-cols-2">
-                  <li className="grid justify-center content-center grid-span-1">
+              <div className="pb-5 rounded-md hover:bg-indigo-400 hover:opacity-80 hover:font-semibold hover:text-zinc-800 bg-zinc-800 text-zinc-200">
+                <h4 className="my-5 font-semibold">Others</h4>
+                <ul className="grid grid-cols-2 my-2">
+                  <li className="grid content-center justify-center grid-span-1">
                     <SiGithub className="w-10 h-10 m-2 text-stone-100" />
-                    <p className="text-red text-xs">Git/Github</p>
+                    <p className="text-xs text-red">Git/Github</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiPython className=" w-10 h-10 m-2 text-sky-700" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiPython className="w-10 h-10 m-2 text-sky-700" />
                     <p className="text-red">Python</p>
                   </li>
 
-                  <li className="grid justify-center content-center grid-span-1">
-                    <SiFigma className="pt-1 w-10 h-10 m-2 text-red-500" />
+                  <li className="grid content-center justify-center grid-span-1">
+                    <SiFigma className="w-10 h-10 pt-1 m-2 text-red-500" />
                     <p className="text-red">Figma</p>
                   </li>
                 </ul>

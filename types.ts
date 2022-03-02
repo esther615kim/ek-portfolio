@@ -8,5 +8,6 @@ export interface IProject{
     technologies:string[]
 }
 
-
 export type Category="Front End"|"Back End"|"Mobile"
+
+export type MenuOptions ="about"|"work"|"contact"

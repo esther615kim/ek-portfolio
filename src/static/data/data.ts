@@ -17,7 +17,7 @@ export const projects: IProject[] =[
         deployed_url:"https://deploy-preview-54--jovial-elion-cb6b73.netlify.app/",
         github_url:"https://github.com/react-node-project/butler-client",
         category:["Front End","Mobile"],
-        technologies:["React","TypeScript"]
+        technologies:["React","TypeScript","Team Project"]
     },
     {
         name:"React Crypto App",
@@ -26,7 +26,7 @@ export const projects: IProject[] =[
         deployed_url:"",
         github_url:"https://github.com/esther615kim/react-chartJS-my-crypto",
         category:["Front End","Mobile"],
-        technologies:["React Native"]
+        technologies:["React","Chart.js","styled-components"]
     },
     {
         name:"React Node.js Readit",

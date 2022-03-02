@@ -1,3 +1,11 @@
+# Project Overview
+
+
+# Technologies
+- React
+- TypeScript
+- Tailwind CSS
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -8,10 +16,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### What I've Learned
-- Tailwindcss https://tailwindcss.com/docs/user-select#selecting-all-text-in-one-click
-- 
+1.`useContext with TypeScript`
 
+2.`Tailwind CSS`
+
+
+### References
+
+- `Tailwind CSS` https://tailwindcss.com/docs/
+- user-select#selecting-all-text-in-one-click
+- `useContext with TypeScript`
+- https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/context/
+- https://dev.to/madv/usecontext-with-typescript-23ln

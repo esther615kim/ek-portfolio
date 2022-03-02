@@ -1,24 +1,31 @@
-import { create } from "domain";
-import { stringify } from "querystring";
+
 import React, { useState,ReactNode,createContext } from "react";
+
+
+export type MenuOptions ="about"|"work"|"contact"
 
 type CardContextProviderProps ={
     children:ReactNode,
 }
 
-const CardContext = createContext({}as CardContextProviderProps);
+const CardContext = createContext<MenuOptions|CardContextProviderProps>({}as CardContextProviderProps);
+// const CardContext = createContext({}as CardContextProviderProps);
 
 export const CardContextProvider =({children}:CardContextProviderProps)=>{
 
-    const [card, setCard] = useState<string>("about");
+    const [card, setCard] = useState<MenuOptions>("about");
 
-    const setCardItem = (cardItem:string):void =>{
+    const setCardItem = (cardItem:MenuOptions):void =>{
       setCard(cardItem);
-      console.log("카드 넣음",card)
+      console.log("card added in context=>",card)
+    }
+
+    const providerValue= {
+       card,setCardItem
     }
 
     return(
-        <CardContext.Provider value={{card,setCardItem}}>
+        <CardContext.Provider value={providerValue}>
         {children}
         </CardContext.Provider>
     )
