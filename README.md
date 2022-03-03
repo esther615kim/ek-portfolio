@@ -1,12 +1,13 @@
-# Project Overview
+## Project Overview
 
+A responsive portfolio website
 
-# Technologies
+## Technologies
 - React
 - TypeScript
 - Tailwind CSS
 
-# Getting Started with Create React App
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -18,8 +19,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ### What I've Learned
-1.`useContext with TypeScript`
 
+1.`useContext with TypeScript`
 2.`Tailwind CSS`
 
 
