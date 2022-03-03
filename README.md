@@ -1,6 +1,6 @@
 ## Project Overview
 
-A responsive portifolio website
+A responsive portfolio website
 
 ## Technologies
 - React
