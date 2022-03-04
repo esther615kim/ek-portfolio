@@ -27,7 +27,7 @@ export default function Contact() {
           <h1 className="ml-1 text-xl font-bold text-left">Contact me.</h1>
           <div className="flex items-center font-semibold text-md ">
             <AiOutlineMobile className="mr-2" />
-            07349932320
+            07947900459
           </div>
           <div className="flex items-center font-semibold text-md">
             <AiOutlineMail className="mr-2" />

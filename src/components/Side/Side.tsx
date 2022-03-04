@@ -51,7 +51,7 @@ const Side = () => {
       </div>
       <div className="pb-10 space-y-2 lg:pb-20">
         <button
-        onClick={()=>{window.location.href=""}} 
+        onClick={()=>{window.location.href="https://resume.io/r/6KtYGMKR3"}} 
         className="w-10/12 py-1 my-1 mb-2 rounded-md shadow-md hover:scale-95 font-poppins bg-gradient-to-r from-stone-100 to-gray-200 hover:text-red-500">
           CV
         </button>

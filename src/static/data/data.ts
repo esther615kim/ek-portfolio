@@ -12,7 +12,7 @@ export const projects: IProject[] =[
     },
     {
         name:"Food Delivery App",
-        description:"Mobile-first desgined food delivery application",
+        description:"Mobile-first desgined food delivery App",
         image_url:require("../image/delivery.png"),
         deployed_url:"https://deploy-preview-54--jovial-elion-cb6b73.netlify.app/",
         github_url:"https://github.com/react-node-project/butler-client",
@@ -21,7 +21,7 @@ export const projects: IProject[] =[
     },
     {
         name:"React Crypto App",
-        description:"visualizsation",
+        description:"Data Visualisation in React",
         image_url:require("../image/crypto_app.png"),
         deployed_url:"https://pedantic-morse-dc91d4.netlify.app",
         github_url:"https://github.com/esther615kim/react-chartJS-my-crypto",
@@ -30,25 +30,25 @@ export const projects: IProject[] =[
     },
     {
         name:"React Node.js Readit",
-        description:"Lorem ipsum dolor sit amet consectetur",
+        description:"Full Stack JavaScript CRUD App",
         image_url:require("../image/readit.png"),
-        deployed_url:"",
+        deployed_url:"https://peaceful-galileo-842e26.netlify.app",
         github_url:"https://github.com/esther615kim/react-my-readit",
         category:["Front End","Back End","Mobile"],
         technologies:["React", "Node.js","MUI"]
     },
     {
         name:"React Testing",
-        description:"Lorem ipsum dolor sit amet consectetur",
+        description:"React-testing-library playground",
         image_url:require("../image/react-testing.png"),
         deployed_url:"",
         github_url:"https://github.com/esther615kim/react-testing-ek/blob/main/README.md",
         category:["Front End","Front End"],
-        technologies:["React", "Jest","MUI"]
+        technologies:["React", "Jest","MUI","Redux"]
     },
     {
         name:"TypeScript Invitation",
-        description:"Lorem ipsum dolor sit amet consectetur",
+        description:"Event RSVPs managing App",
         image_url:require("../image/invitation.png"),
         deployed_url:"",
         github_url:"https://github.com/esther615kim/typescript-react-invitation",
