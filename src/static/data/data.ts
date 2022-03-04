@@ -3,7 +3,7 @@ import { IProject } from './../../../types';
 export const projects: IProject[] =[
     {
         name:"Portfolio",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        description:"Responsive & dark/light-themed Portfolio ",
         image_url:require("../image/portfolio.png"),
         deployed_url:"https://affectionate-gates-1814fd.netlify.app/",
         github_url:"https://github.com/esther615kim/portfolio-project",
@@ -12,7 +12,7 @@ export const projects: IProject[] =[
     },
     {
         name:"Food Delivery App",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        description:"Mobile-first desgined food delivery application",
         image_url:require("../image/delivery.png"),
         deployed_url:"https://deploy-preview-54--jovial-elion-cb6b73.netlify.app/",
         github_url:"https://github.com/react-node-project/butler-client",
@@ -21,7 +21,7 @@ export const projects: IProject[] =[
     },
     {
         name:"React Crypto App",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        description:"visualizsation",
         image_url:require("../image/crypto_app.png"),
         deployed_url:"https://pedantic-morse-dc91d4.netlify.app",
         github_url:"https://github.com/esther615kim/react-chartJS-my-crypto",
