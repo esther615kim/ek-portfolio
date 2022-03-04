@@ -5,7 +5,7 @@ export const projects: IProject[] =[
         name:"Portfolio",
         description:"Lorem ipsum dolor sit amet consectetur adipisicing elit",
         image_url:require("../image/portfolio.png"),
-        deployed_url:"",
+        deployed_url:"https://affectionate-gates-1814fd.netlify.app/",
         github_url:"https://github.com/esther615kim/portfolio-project",
         category:["Front End","Mobile"],
         technologies:["React","TypeScript","tailwindcss"]
