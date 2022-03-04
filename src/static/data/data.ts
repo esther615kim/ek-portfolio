@@ -23,7 +23,7 @@ export const projects: IProject[] =[
         name:"React Crypto App",
         description:"Lorem ipsum dolor sit amet consectetur adipisicing elit",
         image_url:require("../image/crypto_app.png"),
-        deployed_url:"",
+        deployed_url:"https://pedantic-morse-dc91d4.netlify.app",
         github_url:"https://github.com/esther615kim/react-chartJS-my-crypto",
         category:["Front End","Mobile"],
         technologies:["React","Chart.js","styled-components"]
