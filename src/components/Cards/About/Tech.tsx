@@ -70,7 +70,7 @@ const Tech = () => {
                     <p className="text-xs break-all width-10 text-red">
                       styled
                     </p>
-                    <p className="text-xs text-red">coomponents</p>
+                    <p className="text-xs text-red">components</p>
                   </li>
 
                   <li className="grid content-center justify-center grid-span-1">
