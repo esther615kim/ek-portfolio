@@ -56,7 +56,7 @@ const ProjectCard: FunctionComponent<{
 
               <a
                 className="flex items-center justify-center px-4 py-1 mx-5 my-3 space-x-2 rounded-sm bg-zinc-700"
-                href={github_url}
+                href={deployed_url}
               >
                 <AiOutlineFundProjectionScreen />
                 <span>Project</span>
