@@ -41,7 +41,7 @@ export const projects: IProject[] =[
         name:"React Testing",
         description:"React-testing-library playground",
         image_url:require("../image/react-testing.png"),
-        deployed_url:"",
+        deployed_url:"https://github.com/esther615kim/react-testing-ek/blob/main/README.md",
         github_url:"https://github.com/esther615kim/react-testing-ek/blob/main/README.md",
         category:["Front End","Front End"],
         technologies:["React", "Jest","MUI","Redux"]
