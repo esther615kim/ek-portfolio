@@ -1,28 +1,27 @@
+<h1 align="center"> Portfolio</h1><p align="center">
+<div align="center">
+  <p align="center"><a href="https://affectionate-gates-1814fd.netlify.app">Netlify-deployed App</a></p>
+</div>
+
 ## Project Overview
 
 A responsive portfolio website
+<img src="https://user-images.githubusercontent.com/75744588/157440571-5d3fbe7a-1cc7-4d55-88a7-7b2d97564fa7.png" width="550"> 
 
 ## Technologies
 - React
 - TypeScript
 - Tailwind CSS
 
-### Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
 #### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
 
 ### What I've Learned
 
 1.`useContext with TypeScript`
 2.`Tailwind CSS`
-
 
 ### References
 
