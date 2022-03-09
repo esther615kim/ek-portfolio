@@ -50,7 +50,7 @@ export const projects: IProject[] =[
         name:"TypeScript Invitation",
         description:"Event RSVPs managing App",
         image_url:require("../image/invitation.png"),
-        deployed_url:"",
+        deployed_url:"https://vibrant-hypatia-0f78fe.netlify.app",
         github_url:"https://github.com/esther615kim/typescript-react-invitation",
         category:["Front End"],
         technologies:["React", "TypeScript","MUI"]
