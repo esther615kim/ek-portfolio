@@ -9,7 +9,6 @@ import { GoLocation } from "react-icons/go";
 
 const Side = () => {
 
-
   const changeDarkTheme = ():void => {
     const root = window.document.body;
     if(root.className ==="dark"){
@@ -17,9 +16,7 @@ const Side = () => {
     }else{
       root.classList.replace("light","dark")
     }
-
   };
-
 
   return (
     <div>
@@ -64,7 +61,6 @@ const Side = () => {
     </div>
   );
 };
-
 
 
 export default Side;
