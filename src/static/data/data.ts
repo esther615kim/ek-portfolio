@@ -3,7 +3,7 @@ import { IProject } from './../../../types';
 export const projects: IProject[] =[
     {
         name:"Portfolio",
-        description:"Responsive & dark/light-themed Portfolio ",
+        description:"Dark/Light-themed responsive Portfolio ",
         image_url:require("../image/portfolio.png"),
         deployed_url:"https://affectionate-gates-1814fd.netlify.app/",
         github_url:"https://github.com/esther615kim/portfolio-project",
@@ -12,7 +12,7 @@ export const projects: IProject[] =[
     },
     {
         name:"Food Delivery App",
-        description:"Mobile-first desgined food delivery App",
+        description:"Mobile-first designed food delivery App",
         image_url:require("../image/delivery.png"),
         deployed_url:"https://deploy-preview-54--jovial-elion-cb6b73.netlify.app/",
         github_url:"https://github.com/react-node-project/butler-client",
