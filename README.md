@@ -20,8 +20,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### What I've Learned
 
-1.`useContext with TypeScript`
-2.`Tailwind CSS`
+- `useContext with TypeScript`
+- `Tailwind CSS`
 
 ### References
 
