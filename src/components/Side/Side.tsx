@@ -30,7 +30,7 @@ const Side = () => {
       {/* socials */}
       <div className="flex justify-around px-20 py-4 my-5 space-x-2 bg-gradient-to-r dark:opacity-95 opacity-75 from-zinc-700 to-zinc-800 md:px-10 text-stone-100 md:w-auto md:2-full">
         <AiOutlineLinkedin
-         onClick={()=>{window.location.href="www.linkedin.com/in/esther-kim-dev"}}  
+         onClick={()=>{window.location.href="https://www.linkedin.com/in/esther-kim-dev"}}  
         className="w-6 h-6 cursor-pointer hover:text-cyan-300 hover:scale-105" />
         <AiFillGithub 
          onClick={()=>{window.location.href="https://github.com/esther615kim"}} 
